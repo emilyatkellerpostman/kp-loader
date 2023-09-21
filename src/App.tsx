@@ -18,7 +18,7 @@ function App(){
       animate={{ 
         scale: [1, 2, 1, 2, 1],
       }}
-      transition={{duration: 0.8, repeat: Infinity}}
+      transition={{duration: 2.5, repeat: Infinity}}
       style={{ transformOrigin: "center" }}
       />
     </div>

@@ -17,7 +17,7 @@ function Example(){
           scale: [1, 2, 1, 2, 1],
           rotate:  [0, 20, 40, 20, 0]
         }}
-        transition={{duration: 0.8, repeat: Infinity}}
+        transition={{duration: 2.5, repeat: Infinity}}
         style={{ transformOrigin: "center" }}
         />
       </div>
