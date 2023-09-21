@@ -17,8 +17,8 @@ function ExampleTwo(){
               scale: [1, 2, 1, 2, 1],
               rotate:  [0, 20, 40, 20, 0],
             }}
-            transition={{duration: 0.8}}
-            style={{ transformOrigin: "center" }}
+            transition={{duration: 0.8, repeat: Infinity}}
+            style={{ transformOrigin: "center",  }}
             />
           </div>
         );
