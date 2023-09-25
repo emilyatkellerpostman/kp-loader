@@ -5,6 +5,8 @@ import './App'
 import App from './App';
 import Example from './Example';
 import ExampleTwo from './ExampleTwo';
+import Loader from './Loader';
+import Circle from './Circle';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,5 +16,7 @@ root.render(
     <App />
     <Example />
     <ExampleTwo />
+    <Loader />
+    <Circle />
   </React.StrictMode>
 );
