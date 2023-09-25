@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import logo from './images/kp-black.svg'; // Importa tu archivo SVG
+import logo from './images/kp-black.svg';
 
 const containerStyle: React.CSSProperties = {
   position: "relative",
@@ -26,8 +26,8 @@ const logoStyle: React.CSSProperties = {
   position: "absolute",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -50%)", // Centra el logo en el círculo
-  width: "50%", // Ajusta el tamaño del logo según tus necesidades
+  transform: "translate(-50%, -50%)",
+  width: "50%", 
   height: "50%"
 };
 
