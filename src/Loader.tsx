@@ -51,9 +51,18 @@ const logoStyle: React.CSSProperties = {
   height: "100%"
 };
 
+const containerAll = {
+    display: "flex",
+    flexDirection: "column",
+    justifyItems: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "3em"
+}
+
 function Loader() {
   return (
-    <div>
+    <div style={containerAll}>
       <img src={logo} alt="Logo" style={logoStyle} />
       <motion.div
       style={loadingContainer}

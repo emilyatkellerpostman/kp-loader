@@ -6,7 +6,10 @@ const containerStyle: React.CSSProperties = {
   position: "relative",
   width: "5rem",
   height: "5rem",
-  boxSizing: "border-box"
+  boxSizing: "border-box",
+  margin: "0 auto",
+  marginBottom: "3em"
+
 };
 
 const circleStyle: React.CSSProperties = {

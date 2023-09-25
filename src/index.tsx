@@ -7,6 +7,7 @@ import Example from './Example';
 import ExampleTwo from './ExampleTwo';
 import Loader from './Loader';
 import Circle from './Circle';
+import LoadingWavy from './LoadingWavy'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,5 +19,6 @@ root.render(
     <ExampleTwo />
     <Loader />
     <Circle />
+    <LoadingWavy />
   </React.StrictMode>
 );
