@@ -1,4 +1,4 @@
-import { motion, Variants } from 'framer-motion';
+import { motion, Variants } from "framer-motion";
 
 interface DrawVariants extends Variants {
   hidden: { opacity: number };
@@ -23,20 +23,22 @@ const draw: DrawVariants = {
     transition: {
       duration: 2.5,
       ease: "easeInOut",
-      repeat: Infinity
+      repeat: Infinity,
     },
   },
 };
 
 function ExampleTwo() {
   return (
-    <div style={{
-      paddingTop: "5rem",
-      width: "100%",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center"
-    }}>
+    <div
+      style={{
+        paddingTop: "5rem",
+        width: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <motion.svg
         width="600"
         height="600"
@@ -54,7 +56,7 @@ function ExampleTwo() {
           variants={draw}
           style={{
             pathLength: 0,
-            strokeDasharray: '0 1',
+            strokeDasharray: "0 1",
             strokeDashoffset: 1,
           }}
         />
@@ -64,4 +66,3 @@ function ExampleTwo() {
 }
 
 export default ExampleTwo;
-

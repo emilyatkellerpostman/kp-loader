@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import logo from "./images/kp-black.svg";
+import gif from "gif.js";
+
+const gifInstance = new gif();
+
 
 const loadingContainer = {
   width: "2rem",
@@ -53,7 +57,7 @@ const logoStyle: React.CSSProperties = {
 
 const containerAll = {
     display: "flex",
-    flexDirection: "column",
+   // flexDirection: "column",
     justifyItems: "center",
     justifyContent: "center",
     alignItems: "center",
@@ -61,6 +65,40 @@ const containerAll = {
 }
 
 function Loader() {
+
+  const generateGif = () => {
+    // Asegúrate de que gifInstance tenga las dimensiones adecuadas
+    gifInstance.setSize(/* ancho */, /* alto */);
+  
+    // Lógica para generar el GIF utilizando gifInstance
+    // Puedes capturar el estado actual del loader y agregarlo como fotograma al GIF
+  
+    // Se llama a onRenderComplete cuando el GIF ha sido renderizado completamente
+    gifInstance.on("finished", function(blob) {
+      // Crea un objeto URL del blob y crea un enlace para descargar el GIF
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      document.body.appendChild(a);
+      a.style = "display: none";
+      a.href = url;
+      a.download = "mi_gif.gif";
+      a.click();
+      // Libera el objeto URL después de la descarga
+      URL.revokeObjectURL(url);
+    });
+  
+    // Inicia el renderizado del GIF
+    gifInstance.render();
+  };
+  
+  
+  
+
+setTimeout(() => {
+  generateGif();
+}, 5000); 
+
+
   return (
     <div style={containerAll}>
       <img src={logo} alt="Logo" style={logoStyle} />
